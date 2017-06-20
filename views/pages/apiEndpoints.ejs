@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/head %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <% include ../partials/nav %>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>Path</th>
+        <th>Response</th>
+        <th>Additional Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="btn btn-warning btn-xs">Get</span></td>
+        <td><code>/api/clientToken/request</code></td>
+        <td>Client Token</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="btn btn-warning btn-xs">Get</span></td>
+        <td><code>/api/customer/find</code></td>
+        <td>Customer object</td>
+        <td>Must include a query string with <code>id=customer_id</code></td>
+      </tr>
+      <tr>
+        <td><span class="btn btn-info btn-xs">Post</span></td>
+        <td><code>/api/transaction</code></td>
+        <td>Transaction object</td>
+        <td>
+          Body must contain a nonce in the format:
+          <br>
+          <code>{'payment_method_nonce': nonce}</code>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

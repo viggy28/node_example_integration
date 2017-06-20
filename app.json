@@ -1,0 +1,5 @@
+{
+  "name": "Example Braintree Integration: Node.js",
+  "description": "A barebones Node.js app using Express 4",
+  "keywords": ["node", "express", "braintree"]
+}

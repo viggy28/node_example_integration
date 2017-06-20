@@ -1,0 +1,28 @@
+{
+  "name": "node_example_integration",
+  "version": "0.2.6",
+  "description": "node_example_integration",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "bootstrap": "^3.3.7",
+    "braintree": "^2.1.0",
+    "dotenv": "^4.0.0",
+    "ejs": "2.5.6",
+    "express": "4.15.2",
+    "grunt": "^1.0.1",
+    "pg": "6.x"
+  },
+  "keywords": [
+    "node",
+    "braintree",
+    "express"
+  ],
+  "license": "MIT"
+}
