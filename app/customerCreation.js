@@ -7,7 +7,7 @@ customerCreation = (firstName, lastName, email, customerId, req, callback) => {
     firstName: firstName,
     lastName: lastName,
     email : email,
-    customerId : customerId
+    id : customerId
   }, function (err, result) {
     if (err) {
       console.log('error!');
