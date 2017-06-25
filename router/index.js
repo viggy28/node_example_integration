@@ -26,4 +26,4 @@ app.get('/endpoints', function(req, res) {
 app.use('/transaction', transactionRouter);
 app.use('/clientToken', clientTokenRouter);
 app.use('/customer', customerRouter);
-app.use('/customerCreation',customerCreationRouter)
+app.use('/customerCreation',customerCreationRouter);
