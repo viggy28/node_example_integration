@@ -10,9 +10,10 @@ app.use(function (req, res, next) {
   var firstName = req.body.firstName;
   var lastName = req.body.lastName;
   var email = req.body.email;
-  var customerId = req.body.userId;
+  var id = req.body.id;
   console.log('Got a new customer!');
-  customerCreation(firstName,lastName, email, customerId,req, (customerCreationResult) => {
+  console.log('customer id!' + id);
+  customerCreation(firstName,lastName, email, id,req, (customerCreationResult) => {
     res.send(customerCreationResult);
   });
 });
