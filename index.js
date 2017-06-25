@@ -9,6 +9,7 @@ var apiRouter = require('./router');
 var gateway = require('./app/gateway');
 var transactionSale = require('./app/transactionSale');
 
+
 // views is directory for all template files
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
