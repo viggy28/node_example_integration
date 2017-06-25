@@ -1,7 +1,7 @@
 var gateway = require('./gateway');
 
 function clientTokenGenerate(callback) {
-  gateway.clientToken.generate({}, function (err, response) {
+  gateway.clientToken.generate({customerId: aCustomerId}, function (err, response) {
     if (err){
       console.log(err);
       return;
