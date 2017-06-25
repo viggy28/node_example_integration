@@ -3,6 +3,8 @@ var gateway = require('./gateway');
 customerCreation = (firstName, lastName, email, id, req, callback) => {
   console.log('firstName: ' + firstName);
   console.log('lastName: ' + lastName);
+  console.log('email: ' + email);
+  console.log('id: ' + id);
   gateway.customer.create({
     firstName: firstName,
     lastName: lastName,
