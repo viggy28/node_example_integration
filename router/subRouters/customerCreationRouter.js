@@ -1,7 +1,7 @@
 var express = require('express');
 var app = module.exports = express();
 
-var transactionSale = require('../../app/customerCreationRouter');
+var customerCreation = require('../../app/customerCreation');
 
 // path = /api/transaction
 
@@ -12,7 +12,7 @@ app.use(function (req, res, next) {
   var email = req.body.email;
   var customerId = req.body.userId;
   console.log('Got a new customer!');
-  transactionSale(nonceFromTheClient,amount, req, (transactionResult) => {
-    res.send(transactionResult);
+  customerCreation(firstName,lastName, email, customerId,req, (customerCreationResult) => {
+    res.send(customerCreationResult);
   });
 });
