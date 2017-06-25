@@ -3,7 +3,7 @@ var app = module.exports = express();
 
 var customerCreation = require('../../app/customerCreation');
 
-// path = /api/transaction
+// path = /api/customerCreation
 
 app.use(function (req, res, next) {
   console.log(req.body);
