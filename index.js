@@ -8,7 +8,7 @@ var apiRouter = require('./router');
 
 var gateway = require('./app/gateway');
 var transactionSale = require('./app/transactionSale');
-var customerCreation = require('./app/customerCreation');
+//var customerCreation = require('./app/customerCreation');
 
 // views is directory for all template files
 app.set('views', __dirname + '/views');
