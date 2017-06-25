@@ -4,7 +4,7 @@ var app = module.exports = express();
 var transactionRouter = require('./subRouters/transactionRouter');
 var clientTokenRouter = require('./subRouters/clientTokenRouter');
 var customerRouter = require('./subRouters/customerRouter');
-var customerCreationRouter = require('./subRouters/customerCreationRouter')
+var customerCreationRouter = require('./subRouters/customerCreationRouter');
 
 app.all('*', function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
