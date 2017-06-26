@@ -1,3 +1,7 @@
+//responsible for parsing the input from the POST request and call the customerCreation function with a callback
+//usage : http://127.0.0.1:5000/api/customerCreation POST with body firstName,lastName,email,id
+
+
 var express = require('express');
 var app = module.exports = express();
 
@@ -11,9 +15,11 @@ app.use(function (req, res, next) {
   var lastName = req.body.lastName;
   var email = req.body.email;
   var id = req.body.id;
+  var nonceFromTheClient =  req.body.payment_method_nonce;
   console.log('Got a new customer!');
   console.log('customer id!' + id);
-  customerCreation(firstName,lastName, email, id,req, (customerCreationResult) => {
+  console.log('nonceFromTheClient' + nonceFromTheClient);
+  customerCreation(firstName,lastName, email, id, nonceFromTheClient, req, (customerCreationResult) => {
     res.send(customerCreationResult);
   });
 });
