@@ -8,7 +8,9 @@ var apiRouter = require('./router');
 
 var gateway = require('./app/gateway');
 var transactionSale = require('./app/transactionSale');
-
+var customerCreation = require('./app/customerCreation');
+var subMerchantCreation = require('./app/subMerchantCreation');
+var webhook = require('./app/webhook');
 // views is directory for all template files
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
