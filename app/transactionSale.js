@@ -1,9 +1,10 @@
 var gateway = require('./gateway');
 
-transactionSale = (nonceFromTheClient, amount, req, callback) => {
+transactionSale = (nonceFromTheClient, netAmount, serviceFeeAmount, req, callback) => {
   console.log('Nonce: ' + nonceFromTheClient);
   gateway.transaction.sale({
-    amount: amount,
+    amount: netAmount,
+    serviceFeeAmount: serviceFeeAmount,
     paymentMethodNonce: nonceFromTheClient,
     options: {
       submitForSettlement: true

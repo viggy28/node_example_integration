@@ -28,6 +28,6 @@ app.get('/endpoints', function(req, res) {
 app.use('/transaction', transactionRouter);
 app.use('/clientToken', clientTokenRouter);
 app.use('/customer', customerRouter);
-app.post('/customerCreation',customerCreationRouter);
+app.use('/customerCreation',customerCreationRouter);
 app.use('/subMerchantCreation',subMerchantCreationRouter);
 app.post('/webhooks',webhookRouter);
